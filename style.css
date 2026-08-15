@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
+    
 }
 .page1{
     height: 100vh;
@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
    
+   
 }
 .music{
     display: flex;
@@ -20,6 +21,7 @@
     /* background-color: aqua; */
     align-items: flex-end;
     justify-content: center;
+
 }
 .music p {
     font-size: 100px;
@@ -58,12 +60,12 @@ html{
 }
 .box1{
     height: 150px;
-    width: 50%;
-    
+    width: 40%;
+    /* border: 5px solid red; */
     display: flex;
     position: absolute;
     top: 75%;
-    left: 25%;
+    right: 2%;
     align-items: center;
     justify-content: center;
     gap: 30px;
@@ -87,6 +89,35 @@ html{
 .pause{
     display: none;
 }
+.musicList{
+    height: 75vh;
+    width: 50vw;
+   overflow-y: auto;
+   overflow-x: hidden;
+    margin-top: 10px;
+    margin-left: 10px;
+     display: flex;
+    flex-direction: column;
+      gap: 12px;
+      /* border: 5px solid black; */
+}
+.musicList p{
+    height:10vh ;
+    font-size: 3vh;
+    font-weight: bold;
+   
+    color: black;
+    width: 100%;
+   cursor: pointer;
+   /* border-bottom: 2px solid black; */
+   padding-left: 20px;
+   
+  
+}
+#m1{
+    color: black;
+}
+
 .track{
     height: 300px;
     width: 300px;
@@ -95,8 +126,9 @@ html{
    background-position: center;
     position: absolute;
     top:35% ;
-    left: 42%;
+    right: 14%;
     border-radius: 50%;
+    /* border: 5px solid red; */
    
 }
 .class:hover{
@@ -104,11 +136,11 @@ html{
 }
    
 @keyframes rotate {
-    0%{
+    from{
         transform: rotate(0deg);
 
     }
-    100%{
+    to{
         transform: rotate(360deg);
     }
     
@@ -143,20 +175,63 @@ html{
       
        margin-right: 42px;
     }
+    .music{
+        position: absolute;
+        top: -12%;
+    }
     .music p{
         font-size: 4vh;
     }
     .track{
-        height: 200px;
-        width: 200px;
+        height: 120px;
+        width: 120px;
         position: absolute;
-        left: 80px;
+        left: 118px;
+        top: 65%;
+        
+    }
+    .musicList{
+        height: 300px;
+        width: 90%;
+        position: relative;
+        top: 17%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        margin: 1px;
+        border: 0px solid black;
+        gap: 5px;
+        
+    }
+    .musicList p{
+        font-size: 20px;
+        width: 80%;
+        height: 25px;
+        border-bottom: 0px solid black;
+        color: black;
+        cursor: none;
+        display: flex;
+        flex-shrink: 0;
+        margin-left: 1px;
+       
+       
+
+        
     }
     .box1{
         height: 10vh;
         width: 220px;
         position: absolute;
-        left: 80px;
+        
+        left: 75px;
+        top: 85%;
+    }
+    .box1 div{
+        font-size: 5vh;
+    }
+    .class:hover{
+        font-size: 5vh;
     }
     
 }

@@ -5,6 +5,12 @@ var play = document.getElementById("play");
 var musicpause = document.getElementById("pause");
 var forward = document.getElementById("forward");
 var previous = document.getElementById("previous");
+let musicList = document.querySelectorAll(".musicList p");
+
+
+
+     
+
 let songs = [
     "thodi-der-mp3free.org.mp3",
     "ye-tu-ne-kya-kiya-mp3free.org.mp3",
@@ -18,12 +24,14 @@ let currentsong = 0;
        
         music.play();
         
+      
+       
        musicpause.style.display = "flex";
        play.style.display = "none";
         soundtrack.style.animation = "rotate 10s linear infinite";
        soundtrack.style.animationPlayState = "running";
-
        
+
        };
 
 musicpause.onclick = function(){
@@ -43,6 +51,17 @@ forward.onclick  = function(){
     music.play();
      musicpause.style.display = "flex";
       play.style.display= "none";
+         soundtrack.style.animation = "none";
+      soundtrack.offsetHeight;
+     soundtrack.style.animation = "rotate 10s linear infinite";
+    hightlightsong();
+    
+    
+
+
+    
+
+
 };
 previous.onclick  = function(){
     currentsong--;
@@ -53,4 +72,96 @@ previous.onclick  = function(){
     music.play();
      musicpause.style.display = "flex";
       play.style.display= "none";
+        soundtrack.style.animation = "none";
+      soundtrack.offsetHeight;
+     soundtrack.style.animation = "rotate 10s linear infinite";
+    hightlightsong();
 };
+function thodider(){
+    music.src = songs[0];
+    music.play();
+      musicpause.style.display = "flex";
+      play.style.display= "none";
+      soundtrack.style.animation = "none";
+      soundtrack.offsetHeight;
+     soundtrack.style.animation = "rotate 10s linear infinite";
+     currentsong =0;
+     hightlightsong();
+    
+
+      
+}
+function tunekya(){
+    music.src = songs[1];
+    music.play();
+      musicpause.style.display = "flex";
+      play.style.display= "none";
+          soundtrack.style.animation = "none";
+      soundtrack.offsetHeight;
+     soundtrack.style.animation = "rotate 10s linear infinite";
+    currentsong = 1;
+    hightlightsong();
+
+      
+}
+function bahara(){
+    music.src = songs[2];
+    music.play();
+      musicpause.style.display = "flex";
+      play.style.display= "none";
+        soundtrack.style.animation = "none";
+      soundtrack.offsetHeight;
+     soundtrack.style.animation = "rotate 10s linear infinite";
+   currentsong = 2;
+   hightlightsong();
+
+}
+function bahara1(){
+    music.src = songs[2];
+    music.play();
+      musicpause.style.display = "flex";
+      play.style.display= "none";
+        soundtrack.style.animation = "none";
+      soundtrack.offsetHeight;
+     soundtrack.style.animation = "rotate 10s linear infinite";
+     currentsong = 3;
+     hightlightsong();
+    
+}
+       
+function chasni(){
+    music.src = songs[4];
+    music.play();
+      musicpause.style.display = "flex";
+      play.style.display= "none";
+        soundtrack.style.animation = "none";
+      soundtrack.offsetHeight;
+     soundtrack.style.animation = "rotate 10s linear infinite";
+     currentsong = 4;
+     hightlightsong();
+ 
+
+}
+function tumJoAaye(){
+    music.src = songs[5];
+    music.play();
+      musicpause.style.display = "flex";
+      play.style.display= "none";
+      soundtrack.style.animation = "none";
+      soundtrack.offsetHeight;
+     soundtrack.style.animation = "rotate 10s linear infinite";
+     currentsong= 5;
+     hightlightsong();
+   
+}
+musicList.forEach((play,index)=> {
+    play.style.color = "black"
+});
+music.src = songs[currentsong];
+musicList[currentsong].style.color = "red";
+
+function hightlightsong(){
+    musicList.forEach((p,index)=>{
+       p.style.color = (index ===currentsong)? "red" : "black";
+    });
+}
