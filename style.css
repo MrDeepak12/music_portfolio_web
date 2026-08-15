@@ -209,7 +209,7 @@ html{
         width: 80%;
         height: 25px;
         border-bottom: 0px solid black;
-        color: black;
+       
         cursor: none;
         display: flex;
         flex-shrink: 0;
