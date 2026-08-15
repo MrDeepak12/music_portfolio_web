@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.page1{
+    height: 100vh;
+    width: 99.8vw;
+    background-image: url("saloon1.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+   
+}
+.music{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    /* background-color: aqua; */
+    align-items: flex-end;
+    justify-content: center;
+}
+.music p {
+    font-size: 100px;
+    font-weight: 700;
+   
+
+}
+.nav{
+    height: 80px;
+    width: 97%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    position:fixed;
+    margin-top: 5px;
+}
+.nav a{
+    font-size: 30px;
+    text-decoration: none;
+    color: grey;
+}
+.page{
+    height: 100vh;
+    width: 100vw;
+    font-size: 10vh;
+    color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+.box1{
+    height: 150px;
+    width: 50%;
+    
+    display: flex;
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.class{
+    width: 100px;
+    height: 80%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+   
+  
+}
+.play{
+    display: flex;
+
+}
+.pause{
+    display: none;
+}
+.track{
+    height: 300px;
+    width: 300px;
+   background-image: url("soundtrack.jpg");
+   background-size: cover;
+   background-position: center;
+    position: absolute;
+    top:35% ;
+    left: 42%;
+    border-radius: 50%;
+   
+}
+.class:hover{
+    font-size: 60px;
+}
+   
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+@media (max-width:576px) {
+    *{
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    .page1{
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        overflow-x: hidden;
+
+    }
+    .nav{
+        height: 8vh;
+        width: 100%;
+        display: flex;
+      
+        justify-content: flex-start;
+      
+        align-items: center;
+        position: fixed;
+        overflow-x: hidden;
+       
+    }
+    .nav a{
+       font-size: 2vh;
+      
+       margin-right: 42px;
+    }
+    .music p{
+        font-size: 4vh;
+    }
+    .track{
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 80px;
+    }
+    .box1{
+        height: 10vh;
+        width: 220px;
+        position: absolute;
+        left: 80px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .page1 .control{
+    
+    width: 50%;
+   border: 5px solid black;
+    display: flex;
+    position:  relative;
+    top: 300px;
+    left: 25%;
+    align-items: center;
+   
+
+}
+.song{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin-left: 50PX;
+    border-radius: 50%;
+    border-top: 10px solid black;
+    border-right: 0px solid red;
+    border-left:  0px solid red;
+    border-bottom: 10px solid black;
+   display: flex;
+    animation: rotate 3.6s infinite 0s ;
+    position: absolute;
+}
+.play{
+   
+    color: white;
+    font-size: 7vh;
+    display: flex;
+}
+.pause{
+    color: white;
+    font-size: 7vh;
+    display: flex;
+}
+#backward{
+    font-size: 7vh;
+    color: white;
+    position: absolute;
+    left: 280px;
+    top: 48%;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+       
+    }
+    100%{
+        transform: rotate(360deg) ;
+    }
+    
+}
+.previous{
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+    margin-left: 50PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.previous button{
+    font-size: 5vh;
+    color: white;
+   background-color: transparent;
+   outline: none;
+   border: none;
+    font-weight: bold;
+    
+}
+.next{
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+    margin-left: 50PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.next button{
+    font-size: 5vh;
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border: none;
+   
+    font-weight: bold;
+    
+} */
