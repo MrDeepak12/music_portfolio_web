@@ -165,3 +165,14 @@ function hightlightsong(){
        p.style.color = (index ===currentsong)? "red" : "black";
     });
 }
+music.addEventListener("ended",
+    function(){
+        currentsong++ ;
+        if(currentsong>=songs.length){
+            currentsong=0;
+        }
+        music.src = songs[currentsong];
+        music.play();
+        hightlightsong();
+    }
+);
