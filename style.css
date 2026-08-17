@@ -2,6 +2,32 @@
     padding: 0;
     margin: 0;
     
+    
+}
+.preloader{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255), 0.15;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: absolute;
+}
+.loader{
+   
+    height: 150px;
+    width: 150px;
+    background-color: transparent;
+    border-bottom: 10px  dotted black;
+     border-top: 0px solid black;
+      border-left: 0px solid black;
+       border-right: 0px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    animation: rotate 3s  infinite;
+    transform: rotate(360deg);
+    animation-delay: 0.2s;
 }
 .page1{
     height: 100vh;
@@ -11,6 +37,7 @@
     background-position: center;
     display: flex;
     flex-direction: column;
+   
    
    
 }
@@ -134,8 +161,18 @@ html{
 .class:hover{
     font-size: 60px;
 }
-   
+
 @keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: (360deg);
+    }
+    
+}
+   
+/* @keyframes rotate {
     from{
         transform: rotate(0deg);
 
@@ -144,7 +181,7 @@ html{
         transform: rotate(360deg);
     }
     
-}
+} */
 @media (max-width:576px) {
     *{
         padding: 0;

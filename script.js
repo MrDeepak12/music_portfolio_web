@@ -7,9 +7,23 @@ var forward = document.getElementById("forward");
 var previous = document.getElementById("previous");
 let musicList = document.querySelectorAll(".musicList p");
 
-
-
-     
+var preloader = document.getElementById("preloader");
+var mainpage = document.getElementById("home");
+var body = document.querySelector("body");
+window.addEventListener("load",
+    function (){
+          body.style.overflowY = "hidden";
+        // preloader.style.display = "flex";
+        setTimeout(function(){
+           
+            preloader.style.display = "none";
+           body.style.overflowY = "auto";
+            
+             typeText();
+        },2000);
+        
+    }
+);
 
 let songs = [
     "thodi-der-mp3free.org.mp3",
@@ -20,6 +34,10 @@ let songs = [
     "ytmp3free.cc_tum-jo-aaye-slowed-reverb-rahat-fateh-ali-khan-tulsi-kumar-lofi-love-song-youtubemp3free.org.mp3",
 ];
 let currentsong = 0;
+
+
+
+
  play.onclick =function() {
        
         music.play();
@@ -55,6 +73,7 @@ forward.onclick  = function(){
       soundtrack.offsetHeight;
      soundtrack.style.animation = "rotate 10s linear infinite";
     hightlightsong();
+
     
     
 
