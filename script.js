@@ -20,7 +20,7 @@ window.addEventListener("load",
            body.style.overflowY = "auto";
             
              typeText();
-        },2000);
+        },500);
         
     }
 );

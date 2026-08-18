@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    overflow: hidden;
     
     
 }
@@ -23,20 +24,21 @@
        border-right: 0px solid black;
     border-radius: 50%;
     position: absolute;
-    top: 60%;
+    top: 45%;
     left: 45%;
     animation: rotate 3s  infinite;
     transform: rotate(360deg);
     animation-delay: 0.2s;
 }
 .page1{
-    height: 100vh;
+    height: 100%;
     width: 99.8vw;
     background-image: url("saloon1.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
+
    
    
    
@@ -146,8 +148,8 @@ html{
 }
 
 .track{
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
    background-image: url("soundtrack.jpg");
    background-size: cover;
    background-position: center;
@@ -155,7 +157,7 @@ html{
     top:35% ;
     right: 14%;
     border-radius: 50%;
-    /* border: 5px solid red; */
+    border: 2px solid black;
    
 }
 .class:hover{
@@ -172,7 +174,7 @@ html{
     
 }
    
-/* @keyframes rotate {
+@keyframes rotate {
     from{
         transform: rotate(0deg);
 
@@ -181,7 +183,7 @@ html{
         transform: rotate(360deg);
     }
     
-} */
+}
 @media (max-width:576px) {
     *{
         padding: 0;
@@ -193,6 +195,7 @@ html{
         width: 100vw;
         background-size: cover;
         overflow-x: hidden;
+        
 
     }
     .nav{
@@ -269,6 +272,13 @@ html{
     }
     .class:hover{
         font-size: 5vh;
+    }
+    .loader{
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 30%;
+        left: 33%;
     }
     
 }
